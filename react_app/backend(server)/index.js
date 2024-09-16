@@ -18,5 +18,5 @@
 
     const port = 5000
     const server = app.listen(port, () => {
-        conso;express.log(`Server running on port ${port}`)
+        console.log(`Server running on port ${port}`)
     })
