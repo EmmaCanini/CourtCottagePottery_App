@@ -14,6 +14,7 @@
         optionSuccessStatus: 200
     }
     app.use(cors(corsOptions))
+    
     app.use('/', router)
 
     const port = 5000
