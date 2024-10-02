@@ -2,8 +2,13 @@ import React from "react";
 import Accordion from 'react-bootstrap/Accordion';
 
 
+
 const Product = ({ data }) => { // Here we pass the data as a parameter(from the api fetch in the parent component CaseList) to a Case component
                                         // and we want it to return a styled case item in JSX...
+    if (!data) {
+    return <div>Loading...</div>;       // if the data is not available yet though, a little message to say it's coming
+  }         
+                                        
     return (
         <div className="product-item"> 
            
