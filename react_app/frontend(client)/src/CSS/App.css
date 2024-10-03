@@ -25,15 +25,16 @@
 
 .top-bar {
   display: flex;                  
-  justify-content: space-evenly;                  
+  justify-content: space-between;          
+  align-items: center;        
   width: 100%;                   
   padding-bottom: 5px;           
 }
 
 
-.logo {
-  float: left;                              
-  padding: 10px;
+.logo {                             
+  padding: 5px;
+  margin-left: 20px;
   height: 150px;                   
   width: auto;                    
                   
@@ -41,24 +42,22 @@
 
 
 .banner-title {
-  display: flex;
-  float: left;
-  padding: 10px;
   font-size: 45px;
   font-family: "Homemade Apple", cursive;  
   color: rgb(100, 100, 100);      
-  margin: 0;                      
+  margin: 0, auto;   
+  text-align: center;
+  flex-grow: 1;                   
 }
 
 .buttons {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
-  padding-left: 200px;
-  gap: 5px;
+  gap: 3px;
 }
 
 .shop-button, .about-button, .contact-button {
+  margin-right: 10px;
   background: none;               
   border: none;                   
   color: rgb(180, 180, 180);      
@@ -85,4 +84,11 @@
   font-family: "Homemade Apple", cursive;  
   color: rgb(100, 100, 100);      
   margin: 0;   
+}
+
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
 }

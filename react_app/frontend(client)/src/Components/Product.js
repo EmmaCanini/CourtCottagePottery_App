@@ -21,7 +21,7 @@ const Product = ({ data }) => { // Here we pass the data as a parameter(from the
                 {/*// each of these span elements represent which parts from the data will be visible in the header */}
                 <span><strong>Product:&nbsp;</strong>{data.title}</span>  {/*// it uses the data as props so this component can be used for every different case. */}
                 <span><strong>£&nbsp;{data.price}</strong></span>
-                <span><img src={data.image} alt="Image of product" style={{ width: '100px', height: 'auto' }}/></span> {/*// alt here is helful for screen reader functionality */}
+                <span><img src={data.image} alt="Image of product" style={{ width: '250px', height: 'auto' }}/></span> {/*// alt here is helful for screen reader functionality */}
                 </div>
                 </Accordion.Header>
 
