@@ -4,6 +4,7 @@ import Product from './Components/Product';
 import image from './Assets/banner_pic.jpg';
 import logo from './Assets/logo.jpg';
 import './CSS/App.css';
+import SocialsButtons from './Components/SocialsButtons';
 
 
 
@@ -71,9 +72,16 @@ function App() {
         <Product data={product2} />
         <Product data={product3} />
       </div>
+      
+      <div className="social-icons">
+        <SocialsButtons/>
+      </div>
+
     </div>
   );
 }
+
+  
 
 
 

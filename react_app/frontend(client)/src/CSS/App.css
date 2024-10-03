@@ -92,3 +92,10 @@
   justify-content: center;
   gap: 100px;
 }
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-top: 70px;
+}
