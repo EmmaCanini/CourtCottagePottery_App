@@ -11,9 +11,9 @@ const Header = () => {
                 <img className="logo" src={logo} alt="Logo" />
                 <h1 className="banner-title">Court Cottage Pottery</h1>
                 <div className="buttons">
-                    
                     <button className="about-button" onClick={() => navigate('/about')}>About</button>
                     <button className="contact-button" onClick={() => navigate('/contact')}>Contact</button>
+                    <button className="shop-button" onClick={() => navigate('/products')}>Shop</button>
                 </div>
             </div>
         </div>
