@@ -41,10 +41,10 @@ const Home = () => {
       };
     return (
         <div>
-            <h1>Handmade ceramics from the Malvern Hills</h1>
+            <h1 className="text-heading">Artisan ceramics; hand-made in the Malvern Hills</h1>
             <img className="main-image" src={image} alt="Main" />
       <h2 className="title">Featured Products</h2>
-      <p className="featured-text">
+      <p className="text">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper, justo vel efficitur interdum, 
         nisi tortor tempus urna, eu faucibus arcu nunc ut quam. Mauris suscipit, metus vel elementum venenatis, 
         dolor nisi maximus risus, in posuere magna nulla ac leo. Suspendisse tempus sit amet neque id elementum. 

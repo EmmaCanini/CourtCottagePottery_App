@@ -8,7 +8,8 @@ const Header = () => {
     return (
         <div className="header">
             <div className="top-bar">
-                <img className="logo" src={logo} alt="Logo" />
+                <img className="logo" src={logo} alt="Logo" onClick={() => navigate('/')}
+                    style={{ cursor: 'pointer' }} />
                 <h1 className="banner-title">Court Cottage Pottery</h1>
                 <div className="buttons">
                     <button className="about-button" onClick={() => navigate('/about')}>About</button>

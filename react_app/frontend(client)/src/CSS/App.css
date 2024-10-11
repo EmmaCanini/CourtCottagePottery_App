@@ -67,7 +67,26 @@
   text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
-.shop-button:hover, .about-button:hover, .contact-button:hover {
+
+.parent-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 10px;
+  margin-top: 20px;
+}
+.home-button {
+  margin-right: 10px;
+  background: none;               
+  border: none;                   
+  color: rgb(180, 180, 180);      
+  font-size: 18px;                
+  cursor: pointer;                                     
+  font-family: "Urbanist", sans-serif;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.shop-button:hover, .about-button:hover, .contact-button:hover, .home-button:hover{
   color: rgb(100, 100, 100);     
 }
 
@@ -80,21 +99,39 @@
 
 .title {
   font-size: 36px;
-  font-family: "Homemade Apple", cursive;  
+  font-family: "Urbanist", sans-serif;  
+  font-weight: lighter;
   color: rgb(100, 100, 100);      
   margin-top: 70px;   
+  text-align: center;
 }
-.featured-text {
+.text {
   max-width: 1000px;   
   margin: 0 auto; 
   margin-bottom: 40px;     
   padding: 10px;       
   font-family: "Urbanist", sans-serif;
   font-size: 16px;
+  font-weight: lighter;
   color: rgb(100, 100, 100);
   line-height: 1.6;
   text-align: center;  
 }
+
+.text-heading {
+  max-width: 1000px;   
+  margin: 0 auto; 
+  margin-bottom: 40px; 
+  margin-top: 40px;    
+  padding: 10px;       
+  font-family: "Urbanist", sans-serif;
+  font-size: 36px;
+  font-weight: lighter;
+  color: rgb(100, 100, 100);
+  line-height: 1.6;
+  text-align: center;  
+}
+
 
 .content-container {
   display: flex;

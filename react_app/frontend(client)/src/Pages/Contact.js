@@ -1,16 +1,18 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import SocialsButtons from "../Components/SocialsButtons";
 
 const Contact= () => {
     const navigate = useNavigate();
 
     return(
         <div>
-            <h1>Contact Us</h1>
+            <h2 className="title">Contact Us</h2>
+            <div className="parent-container">
+            <button className="home-button" onClick={() => navigate('/')}>Home</button>
+            </div>
+            <SocialsButtons />
             
-                    <button className="home-button" onClick={() => navigate('/')}>Home</button>
-                
-
         </div>
     )
 
