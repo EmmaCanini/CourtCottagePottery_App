@@ -1,10 +1,12 @@
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import ProductList from './Components/ProductList';
-import Product from './Components/Product';
-import image from './Assets/banner_pic.jpg';
-import logo from './Assets/logo.jpg';
 import './CSS/App.css';
+import Header from './Components/Header';
+import AppRoutes from './Routes/AppRoutes';
+import image from './Assets/banner_pic.jpg';
 import SocialsButtons from './Components/SocialsButtons';
+import Product from './Components/Product';
+
 
 
 
@@ -46,38 +48,28 @@ function App() {
   };
 
   return (
-    <div className="App">  
-
-      <div className="panel">
-        <div className="top-bar">
-          <img className="logo" src={logo} alt="Logo" />
-          <h1 className="banner-title">Court Cottage Pottery</h1>
-          <div className="buttons">
-            <button className="shop-button">Shop</button>
-            <button className="about-button">About</button>
-            <button className="contact-button">Contact</button>
-          </div>
-        </div>
-      </div>
-
+    <>
     
+      <Header />
+      <AppRoutes />
       <img className="main-image" src={image} alt="Main" />
-
-  
       <h2 className="title">Featured Products</h2>
-
+      <p className="featured-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse semper, justo vel efficitur interdum, 
+        nisi tortor tempus urna, eu faucibus arcu nunc ut quam. Mauris suscipit, metus vel elementum venenatis, 
+        dolor nisi maximus risus, in posuere magna nulla ac leo. Suspendisse tempus sit amet neque id elementum. 
+      </p>
       <div className="content-container">
         {/* Product components with temp mock data */}
         <Product data={product1} />
         <Product data={product2} />
         <Product data={product3} />
       </div>
-      
       <div className="social-icons">
         <SocialsButtons/>
       </div>
 
-    </div>
+    </>
   );
 }
 
