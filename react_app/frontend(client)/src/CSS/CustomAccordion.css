@@ -1,0 +1,17 @@
+.custom-accordion-header .accordion-button {
+  background-color: transparent !important;
+  color: rgb(180, 180, 180) !important;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.custom-accordion-header .accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  color: rgb(180, 180, 180) !important;
+}
+
+.custom-accordion-header .accordion-button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}

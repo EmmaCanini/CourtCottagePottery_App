@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faFacebookF } from '@fortawesome/free-brands-svg-icons'; 
 
 
-const SocialsButtons=() => {
+const SocialsButtons = () => {
   return (
     <div className="social-icons">
       <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">

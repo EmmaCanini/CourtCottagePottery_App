@@ -50,21 +50,24 @@ const ProductList = () => { //declares productList component which will render a
     // JSX FOR RENDERING THE COMPONENT
     return(
         <>
-        <input                          // This makes an imput field for the search functionality
-        type= "text"                    // specify imput type...
-        placeholder= "Search Products"     //Specify anything written there as a placeholder
-        value= {searchPhrase}           //specify what will go into the box
-        onChange= {(e) => setSearchPhrase(e.target.value)}  //specify the behaviour and make it update accordingly. Here, it updates the state of 'searchPhrase'
-        className= "search-box"         // to reference the css later                                              //whenever thhe value typed in changes
-        />
+        <div className= "search-box-container">
+            <input                          // This makes an imput field for the search functionality
+                type= "text"                    // specify imput type...
+                placeholder= "Search..."     //Specify anything written there as a placeholder
+                value= {searchPhrase}           //specify what will go into the box
+                onChange= {(e) => setSearchPhrase(e.target.value)}  //specify the behaviour and make it update accordingly. Here, it updates the state of 'searchPhrase'
+                className= "search-box"         // to reference the css later                                              //whenever thhe value typed in changes
+            />
+        </div>
 
-        <div                            // renders a div to contain the list of filtered(or not filtered) cases...
-        className="product-list">          {/*// for the css reference */}
-                {filtered.slice(0, visible)//this slices the 'filtered' array to only show number of case specified by 'visible'...
-                .map((productData) => (   // then the .map maps over the sliced 'filtered' array...
-                    <Product key={productData.id} data={productData} /> // to render a Case component for each case.
-                    ))} {/*// the 'key' element assigns a unique number to each case component, and 'data' passes the caseData from earlier 
-                                                                                                // to the Case as a prop so it changes accordingly */}
+        <div className= "product-list-container">                           {/*// renders a div to contain the list of filtered(or not filtered) cases...*/}
+            <div className="product-list">          {/*// for the css reference */}
+                    {filtered.slice(0, visible)//this slices the 'filtered' array to only show number of case specified by 'visible'...
+                    .map((productData) => (   // then the .map maps over the sliced 'filtered' array...
+                        <Product key={productData.id} data={productData} /> // to render a Case component for each case.
+                        ))} {/*// the 'key' element assigns a unique number to each case component, and 'data' passes the caseData from earlier 
+                                                                                                    // to the Case as a prop so it changes accordingly */}
+            </div>
         </div>
 
 
