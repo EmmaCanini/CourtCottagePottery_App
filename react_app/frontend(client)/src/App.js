@@ -3,9 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './CSS/App.css';
 import Header from './Components/Header';
 import AppRoutes from './Routes/AppRoutes';
-import image from './Assets/banner_pic.jpg';
-import SocialsButtons from './Components/SocialsButtons';
-import Product from './Components/Product';
 
 
 
@@ -16,8 +13,8 @@ function App() {
   return (
     <>
     
-      <Header />
-      <AppRoutes />
+       <Header /> {/*// means it appears on every page in the app */}
+      <AppRoutes /> {/*// the routing will now be made available from every page with useNavigate hook */}
  
 
     </>

@@ -9,8 +9,8 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
+    <BrowserRouter> // used here to ensure routing works on everything inside 
+      <App />   // ... in this case, the whole app
     </BrowserRouter>
   </React.StrictMode>
 );

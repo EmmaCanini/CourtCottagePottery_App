@@ -15,7 +15,9 @@ const Header = () => {
                     <button className="about-button" onClick={() => navigate('/about')}>About</button>
                     <button className="contact-button" onClick={() => navigate('/contact')}>Contact</button>
                     <button className="shop-button" onClick={() => navigate('/products')}>Shop</button>
-                </div>
+                 </div>  {/* // useNavigate can get these routes from AppRoutes without calling it in here because 
+                                        App is wrapped by BrowserRouter, then AppRoutes is called in App and everything else
+                                         is wrapped by App*/}
             </div>
         </div>
     );
